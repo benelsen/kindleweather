@@ -1,0 +1,25 @@
+{
+  "name": "kindleweather",
+  "version": "0.0.1",
+  "description": "Generate an image with current weather conditions to use as a screensaver on the kindle.",
+  "main": "kindleweather.sh",
+  "dependencies": {
+    "async": "~0.1.22",
+    "moment": "~1.7.0",
+    "superagent": "~0.9.3"
+  },
+  "devDependencies": {  
+  },
+  "scripts": {
+  },
+  "repository": { 
+    "type" : "git", 
+    "url" : "http://github.com/benelsen/kindleweather.git"
+  },
+  "author": { 
+    "name" : "Ben Elsen", 
+    "email" : "ben.elsen@gmail.com", 
+    "url" : "http://benelsen.com/"
+  },
+  "license": "MIT"
+}
