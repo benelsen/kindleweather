@@ -53,6 +53,9 @@ getForecast = function(weather, callback) {
   .end( function(res) {
     
     weather.forecast = res.body.forecast.simpleforecast.forecastday.map( function(e) {
+      if ( e.icon.substr(0,6) == 'chance' )
+        e.icon = e.icon.substr(6)
+      
       return {
         high: e.high.celsius, 
         low: e.low.celsius,
@@ -73,7 +76,7 @@ svgthing = function(weather, callback) {
   var output = template;
   
   output = output.replace( '$location', weather.conditions.observation_location.city );
-  output = output.replace( '$date', moment().format('ddd, MMM Do') );
+  output = output.replace( '$date', moment().format('ddd, MMM Do H:mm') );
   
   output = output.replace( 'ICON_ONE',   weather.conditions.icon  );
   output = output.replace( 'ICON_TWO',   weather.forecast[1].icon );
