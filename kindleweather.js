@@ -120,11 +120,11 @@ svgthing = function(weather, callback) {
   var conditions = [];
   
   if ( weather.conditions.precip_today_metric > 0 ) {
-    conditions.push('rain');
+    conditions.push('cond_rain');
   }
   
   if ( weather.conditions.wind_kph > 10 ) {
-    conditions.push('wind');
+    conditions.push('cond_wind');
   }
   
   for ( i in conditions ) {
