@@ -14,4 +14,4 @@ All other weather symbols as well as the original svg template and idea are by [
 
 # License
 
-[MIT](https://github.com/benelsen/kindleweather/blob/master/LICENSE)
+[MIT](LICENSE)
